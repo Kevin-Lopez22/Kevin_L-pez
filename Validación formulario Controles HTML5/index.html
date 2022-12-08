@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> FORMULARIO Contactar.me </title>
+    </head>
+    <body>
+        <h1> Formulario de registro </h1>
+        <form action="">
+            <Fieldset>
+                <label for="txtNombre" >Nombre </label><br>
+                <input type="text" name="txtNombre" pattern="[A-Za-z]+" required><br>
+                <label for="txtApellido" >Apellido </label><br>
+                <input type="text" name="txtApellido" pattern="[A-Za-z]+" required><br>
+                <label for="txtCorreo">Correo </label><br>
+                <input type="email" name="txtCorreo" required><br>
+                <label for="txtTelefono" >Telefono </label><br>
+                <input type="text" name="txtTelefono" pattern="[08-9]{2}[0-9]{7,8}" required><br>
+                <label for="txtContraseña" >Contraseña </label><br>
+                <input type="password" name="txtContraseña" minlength="8" required><br>
+                <label for="cmbCargo">Cargo </label><br>
+                <select name="txtCargo" id="cmbCargo">
+                    <option value="Director">Director</option>
+                    <option value="Operador">Operador</option>
+                    <option value="Supervisor">Supervisor</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+
+            </Fieldset>
+        </form>
+    </body>
+</html>
